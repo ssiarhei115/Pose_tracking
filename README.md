@@ -1,5 +1,5 @@
 <p style='text-align:center;'>
-<img src='img.png' width=600>
+<img src='img.png' width=300>
 </p>
 
 # YOGA pose quality estimator 
