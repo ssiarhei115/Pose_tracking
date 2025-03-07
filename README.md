@@ -77,37 +77,30 @@ Data normalization is used in machine learning to make model training less sensi
 
 Some common norm calculations:
 
-* L1-norm: $$ ||x||_1 = {\sum_i |x_i|} $$
-* L2-norm: $$ ||x||_2 = \sqrt{{\sum_i |x_i|^2}} $$
+* L1-norm: 
+
+$$ ||x||_1 = {\sum_i |x_i|} $$
+* L2-norm: 
+
+$$ ||x||_2 = \sqrt{{\sum_i |x_i|^2}} $$
 
 ***Normalizing a Vector***
 
 For vector u $\epsilon R^n$ 
+
 $$ ||u|| = \sqrt{u_1^2+u_2^2+...+u_n^2} $$
 
 Mathematically a norm is a total size or length of all vectors in a vector space or matrices. And after we calculate the Norm, then we can normalize a vector. By definition a norm on a vector space—over the real or complex field—is an assignment of a non-negative real number to a vector. The norm of a vector is its length, and the length of a vector must always be positive (or zero). 
 
-When we normalize a vector V=(x,y,z), we actually calculate $ {V\over{|V|}} = ({x\over{|V|}}, {y\over{|V|}}, {z\over{|V|}}) $
+When we normalize a vector V=(x,y,z), we actually calculate 
+
+$$ {V\over{|V|}} = ({x\over{|V|}}, {y\over{|V|}}, {z\over{|V|}}) $$
 
 L2 Norm of a vector = Euclidian distance of that point vector from origin.
 
 ## Summary
 
-<img src='imgs/summary.png'>
 
-Two models based on UNet were compared in satellites segmentation task.
-As expected, UNet with EfficientNet-b0 backbone (4M, params; pretrained on Imagenet) significantly outperformed base UNet acccording to all criterias designated, after only 10 epochs training:
-    
-    * It works 1.5 times faster than the base model, on the same hardware configuration; 
-    * it showed significantly better values ​​for all metrics;
-
-<img src='imgs/models_vis.png'>
-
-How to improve results:
-
-1) Scaling EfficientNet backbone to HW resource constraints
-2) Increasing training epochs number
-3) Another NN architecture + encoder combination should be tested too
 
   
 ## Libraries & tools used
