@@ -7,12 +7,10 @@
 Pose estimation, or the ability to detect humans and their poses from image data, is one of the most exciting — and most difficult — topics in machine learning and computer vision.
 
 ## Main goal
-Develop Neural Network - based approach to estimate the quality of user yoga pose comparing to the teacher (coach) execution as reference. 
+Develop Neural Network - based approach to estimate the quality of yoga-trainee pose comparing to the trainer (coach) execution as reference. This algorythm represents real interest for both: yoga trainer and trainee. Teachers can assess their students progress and correct their mistakes using visual confirmation, while yoga trainee can define how good their asanas are comparing to reference=etalon execution.
 
-## Models
-keypointrcnn_resnet50_fpn
-
-Constructs a Keypoint R-CNN model with a ResNet-50-FPN backbone.
+## Model
+Pre-trained PyTorch KeyPoint RCNN with ResNet50 backbone.
 
 Reference: Mask R-CNN.
 
@@ -49,7 +47,9 @@ $$ D(F_{xy},G_{xy}) = \sqrt {2*(1-cosineSimilarity(F_{xy},G_{xy}))} $$
 
 * Fxy and Gxy are two pose vectors to be compared after L2 normalization.
 
-### weighted matching
+    *The lower the number, the closer the distance*
+
+### weighted distance
 
 When we are trying to infer where a joint is, we almost never have 100% confidence in where it is. Each piece of joint data returned thus also has a confidence score. Sometimes we are very confident of where a joint is (e.g., if we can see it clearly); other times, we have very low confidence (e.g., if the joint is cut off or occluded). 
 
@@ -61,6 +61,7 @@ $$ D(F_{xy}, G_{xy}) = {{1} \over {\sum_{k=1}^{17} Fc_k} } * {\sum_{k=1}^{17}Fc_
 * Fck is the confidence score of the kth keypoint of F. 
 * Fxy and Gxy represent the x and y positions of the k-th keypoint for each vector.
 
+    *The lower the number, the closer the distance*
 
 
 ### Important terms
@@ -100,7 +101,11 @@ L2 Norm of a vector = Euclidian distance of that point vector from origin.
 
 ## Summary
 
+Both metrics provide pose-similarity-dependent scores: the more reference and test are similar, the less number is observed; visualization technique takes into account the pose similarity/distance value: lower distance values result in the greener coloring, high distance causes red coloring.
 
+Video of yoga trainee pose-execution in comparison with a reference is available here: 
+
+https://drive.google.com/file/d/1V4RVuCm0ab7pBU3BuT3xZR-7c3hHDE2r/view?usp=sharing 
 
   
 ## Libraries & tools used
