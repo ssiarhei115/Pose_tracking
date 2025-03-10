@@ -101,11 +101,11 @@ L2 Norm of a vector = Euclidian distance of that point vector from origin.
 
 ## Summary
 
-Both metrics provide pose-similarity-dependent scores: the more reference and test are similar, the less number is observed; visualization technique takes into account the pose similarity/distance value: lower distance values result in the greener coloring, high distance causes red coloring.
+Both metrics provide poses-similarity-dependent scores: the more reference and test images are similar, the smaller values are displayed; visualization technique takes into account the poses similarity/distance value: the lower the metrics values (higher poses similarity), the greener coloring; high distance (low poses similarity) lead to red coloring.
 
 Video of yoga trainee pose-execution in comparison with a reference is available here: 
 
-https://drive.google.com/file/d/1V4RVuCm0ab7pBU3BuT3xZR-7c3hHDE2r/view?usp=sharing 
+https://drive.google.com/file/d/11a7uKdTXzNXmnAXWYMG_hGRPH8ldDzvE/view?usp=sharing
 
   
 ## Libraries & tools used
