@@ -2,7 +2,7 @@
 <img src='img.png' width=700>
 </p>
 
-# YOGA pose quality estimator 
+# YOGA pose quality estimation
 
 Pose estimation, or the ability to detect humans and their poses from image data, is one of the most exciting — and most difficult — topics in machine learning and computer vision.
 
