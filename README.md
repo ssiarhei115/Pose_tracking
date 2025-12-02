@@ -108,5 +108,4 @@ Video of yoga trainee pose-execution in comparison with a reference is available
 https://drive.google.com/file/d/11a7uKdTXzNXmnAXWYMG_hGRPH8ldDzvE/view?usp=sharing
 
   
-## Libraries & tools used
-* see the requirements
+
